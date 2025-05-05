@@ -1,0 +1,54 @@
+Step-by-Step: Enable Dev Hub & Connect CLI
+Step 1: Enable Dev Hub in Salesforce**
+
+1. Login to your Salesforce production or Developer Edition org**
+   [https://login.salesforce.com](https://login.salesforce.com)
+
+2. Navigate to:
+
+   * Click the **gear icon** → **Setup**
+   * In the **Quick Find box**, type: `Dev Hub`
+   * Click **Dev Hub**
+   * **Check the box** to enable Dev Hub
+   * Click **Save**
+
+
+Step 2: Log In to Dev Hub Using sf CLI**
+
+In your terminal, run:
+
+-- sf org:login:web --alias DevHub --set-default-dev-hub
+
+-This opens your browser to log in.
+-After login, the CLI sets this org as your **default Dev Hub**.
+
+> `--alias DevHub`: gives it a nickname
+> `--set-default-dev-hub`: sets it as the default for scratch orgs
+
+Step 3: Verify Connection**
+
+To verify your Dev Hub is connected, run:
+
+-- sf org list
+-------------------------------------------------------------------------------------
+Once Dev Hub is connected, you can create scratch orgs and push metadata.
+
+STEP 1: Create a Scratch Org (if not already done)
+
+-- sf org create scratch --definition-file config/project-scratch-def.json --alias scratchExam_1 --duration-days 10 --set-default --json
+
+STEP 2: Generate a Password for the Scratch Org User
+
+-- sf org generate password --target-org scratchExam_1
+
+This creates a password and shows you the username and password for the scratch org.
+
+STEP 3: Get the Username (if needed)
+
+-- sf org display --target-org scratchExam_1
+
+Option 1: Auto-login via Browser (No password needed)
+Use this if you're actively developing and just want quick access:
+
+-- sf org open --target-org scratchExam_1
+
