@@ -30,6 +30,10 @@ Step 3: Verify Connection**
 To verify your Dev Hub is connected, run:
 
 -- sf org list
+
+List:
+
+-- sf org list limits -o DevHub
 -------------------------------------------------------------------------------------
 Once Dev Hub is connected, you can create scratch orgs and push metadata.
 
