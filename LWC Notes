@@ -12,3 +12,13 @@ a)can be updated
 b)can be redecared
 c)Bad Parctice use var
 d)global scope
+
+-----------------------------------------
+Object:
+
+-> Object values are written as name : value pairs(name and value)
+-> {....} with the optinal list property
+-> A propert is a "key:value" psir, where a key is a string(also called property name) and there value can be anything.
+-> Javascriot object from JSON object literal JSON.parse(myJSON)
+->Object into string by JSON.Stringify(myJSON)
+-> access object values by using (.) notation or {[]}
