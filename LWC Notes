@@ -1,1 +1,14 @@
+Varibales
+Let:
+a)can be updated
+b)can not be redeclared
 
+const:
+a)can not be updated
+b)can not be redeclared
+
+var:
+a)can be updated
+b)can be redecared
+c)Bad Parctice use var
+d)global scope
