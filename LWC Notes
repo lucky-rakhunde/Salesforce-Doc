@@ -1,3 +1,5 @@
+
+
 Varibales
 Let:
 a)can be updated
@@ -22,3 +24,22 @@ Object:
 -> Javascriot object from JSON object literal JSON.parse(myJSON)
 ->Object into string by JSON.Stringify(myJSON)
 -> access object values by using (.) notation or {[]}
+
+------------
+Spread Operator (...)
+-> Allow us to quickly copy all or part of an exsting array or object into another array or object
+->Usage: Expanding String
+Combing Arrays
+Combing Object
+Creating new shallow copy of Array and Object
+
+Destructuring Assignment
+->Allows to unpack values from arrays , or properties from objects
+-> When desrructuring arrays, the oerdr that variables are declared is important
+
+String Iterpolation
+-> Template Literals use back-ticks(``) rather than the quotes ("") to define a string
+-> With templates literals, you can use both single and double quotes inside string
+->Template literals allows multiline string
+->The method is called string iterpolation ${...}
+-> Template literals allow expression in string
